@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+	<title>jQuery UI Builder 0.1</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+	<script src="javascripts/builder.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/components/component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/components/dialog.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/components/slider.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<link rel="stylesheet" href="stylesheets/ui.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function () {
+			builder.init();
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header toolbar ui-helper-clearfix">
+		<div class="buttonset ui-helper-clearfix buttonset-right">
+			<a href="#" class="button ui-state-default ui-corner-all button-icon-left">
+				<span class="ui-icon ui-icon-power"></span>
+				Logout
+			</a>
+		</div>
+		<div class="buttonset ui-helper-clearfix">
+			<a href="javascript:builder.newDialog()" class="button ui-state-default button-icon-solo ui-corner-all"><span class="ui-icon ui-icon-document"></span> New</a>
+			<a href="#" class="button ui-state-default button-icon-solo ui-corner-all"><span class="ui-icon ui-icon-folder-open"></span> Open</a>
+			<a href="#" class="button ui-state-default button-icon-solo ui-corner-all"><span class="ui-icon ui-icon-disk"></span> Save</a>
+
+		</div>
+		
+		<div class="buttonset buttonset-single ui-helper-clearfix">
+			<button class="button ui-state-default ui-state-active ui-priority-primary ui-corner-left">Edit</button>
+			<button class="button ui-state-default ui-priority-primary ui-corner-right">View</button>
+		</div>
+	</div>
+	
+	<div id="editor"></div>
+	
+	<div class="hidden" id="library" title="Library">
+		<input type="search" id="search" placeholder="Search" />
+		<div class="components"></div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+	font: 10px Verdana, sans-serif;
+	background: #F3F3F3 url(../images/background.png) repeat;
+	margin: 0;
+	overflow: hidden;
+}
+
+a {
+	cursor: default !important;
+}
+
+.hidden {
+	display: none;
+}
+
+.header {
+	border: 1px solid #cccccc; 
+	background: #eeeeee url(../images/ui-bg_glass_80_eeeeee_1x400.png) 50% 50% repeat-x; 
+	color: #2e7db2; 
+	border-left: 0px; 
+	border-right: 0px;
+	border-top: 0px;
+}
+
+.content {
+	background: #fff;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	right: 0px;
+	top: 33px;
+	padding: 10px 229px 10px 10px;
+	overflow-y: scroll;
+}
+
+.content > .sidebar {
+	width: 230px;
+	position: fixed;
+	right: 15px;
+	border-left: 1px solid #ccc;
+	bottom: 0;
+	top: 33px;
+	background: #F3F3F3;
+}
+
+.button { outline: 0; margin:0 4px 0 0; padding: .4em 1em; text-decoration:none !important;  position: relative; text-align: center; zoom: 1; color: #2E6E9E !important; }
+.button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+
+a.button { float:left; cursor: default; }
+
+button.button { width:auto; overflow:visible; }
+
+.button-icon-left { padding-left: 2.1em; }
+.button-icon-right { padding-right: 2.1em; }
+.button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+.button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+
+.button-icon-solo { display:block; width:8px; text-indent: -9999px; }
+
+.buttonset { float:left; }
+.buttonset-right { 
+	float: right; 
+	margin-right: 0 !important;
+}
+
+.buttonset .button { float: left; }
+.buttonset-single .button, 
+.buttonset-multi .button { margin-right: -1px;}
+
+.toolbar { padding: 5px; }
+.toolbar .buttonset { margin-right:1.5em; padding-left: 1px; }
+.toolbar .button { font-size: 1em;  }
+
+.clear {
+	clear: both;
+}
+
+#search {
+	width: 100%;
+	margin: 5px 0;
+}
+
+#editor {
+	top: 33px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	overflow: scroll;
+}
+
+body > div {
+	overflow: visible !important;
+}
+
+#library > .components {
+	padding-top: 5px;
+	border-top: 1px solid #ccc;
+}
+
+#library .component {
+	margin-bottom: 5px; 
+	font-size: 9px; 
+	cursor: default;
+	min-height: 35px;
+	padding: 5px;
+}
+
+#library .component img {
+	float: left;
+	margin-right: 5px;
+}
+
+#library .component:hover {
+	background-color: #EAF1F8;
+}
+
+#library .component:active {
+	color: #fff !important;
+	background-color: #357FCD;
+}
+
+.component-hover {
+	border: 2px solid #357FCD;
+}
